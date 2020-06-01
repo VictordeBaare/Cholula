@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>BoilerPlateCore.Business.Logic</AssemblyName>
+    <RootNamespace>BoilerPlateCore.Business.Logic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Logic.Interfaces\Business.Logic.Interfaces.csproj" />
+    <ProjectReference Include="..\Data.Repositories.Interfaces\Data.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,63 @@
+{
+  "author": "Victor de Baare",
+  "classifications": [],
+  "description": "",
+  "name": "BoilerPlateCore",
+  "defaultName": "BoilerPlateCore",
+  "identity": "BoilerPlateCore.Template.CSharp",
+  "groupIdentity": "BoilerPlateCore.Template",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "BoilerPlateCore",
+  "sourceName": "BoilerPlateCore",
+  "guids": [],
+  "primaryOutputs": [
+        {
+            "path": "Data.Repositories.Interfaces\\Data.Repositories.Interfaces.csproj"
+        },
+        {
+            "path": "Data.Repositories\\Data.Repositories.csproj"
+        },
+        {
+            "path": "Business.Logic\\Business.Logic.csproj"
+        },
+        {
+            "path": "Business.Logic.Interfaces\\Business.Logic.Interfaces.csproj"
+        },
+        {
+            "path": "Common\\Common.csproj"
+        },
+        {
+            "path": "CompositionRoot\\CompositionRoot.csproj"
+        },
+        {
+            "path": "Entities\\Entities.csproj"
+        },
+        {
+            "path": "WebApi\\WebApi.csproj"
+        },
+        {
+            "path": "Web.Common\\Web.Common.csproj"
+        },
+        {
+            "path": "Worker.Service\\Worker.Service.csproj"
+        },
+        {
+            "path": "Entities.Test\\Entities.Test.csproj"
+        },
+        {
+            "path": "TestBase\\TestBase.csproj"
+        },
+        {
+            "path": "Business.Logic.Test\\Business.Logic.Test.csproj"
+        },
+        {
+            "path": "Common.Test\\Common.Test.csproj"
+        },
+        {
+            "path": "Specflow.Test\\Specflow.Test.csproj"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="8860F39E-B071-41FD-8C97-9A9C489D4D4B" Version="0.0.2" Language="en-US" Publisher="Victor de Baare" />
+        <DisplayName>Cholula</DisplayName>
+        <Description xml:space="preserve">C# Asp.Net Core 3.1 Solution builder.
+Containing a WebApi project
+- Swagger
+- NLog
+- Global Exception Handling
+- EF core
+
+Worker Process
+- EF core
+- NLog
+
+Testing
+- Moq
+- Specflow
+- MsTest
+
+ Created with SideWaffle</Description>
+        <Tags>Solution Builder. WebApi. SideWaffle.</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\Templates" />
+    </Assets>
+</PackageManifest>

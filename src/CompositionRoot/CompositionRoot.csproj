@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>BoilerPlateCore.CompositionRoot</AssemblyName>
+    <RootNamespace>BoilerPlateCore.CompositionRoot</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Logic.Interfaces\Business.Logic.Interfaces.csproj" />
+    <ProjectReference Include="..\Business.Logic\Business.Logic.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Data.Repositories\Data.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
