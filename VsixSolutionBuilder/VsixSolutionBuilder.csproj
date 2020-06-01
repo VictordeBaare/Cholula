@@ -48,9 +48,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="overview.md" />
     <None Include="Properties\wafflebuilder.targets">
       <SubType>Designer</SubType>
     </None>
+    <None Include="publishManifest.json" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
