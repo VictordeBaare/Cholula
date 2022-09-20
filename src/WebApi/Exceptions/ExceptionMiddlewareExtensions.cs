@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +11,19 @@ namespace BoilerPlateCore.WebApi.Exceptions
 {
     public static class ExceptionMiddlewareExtensions
     {
+        public static void ConfigureUnObservedTasksHandler(ILogger logger)
+        {
+            TaskScheduler.UnobservedTaskException += (object sender, UnobservedTaskExceptionEventArgs eventArgs) =>
+            {
+                eventArgs.SetObserved();
+                eventArgs.Exception.Handle(ex =>
+                {
+                    logger.LogError(ex, "UnobservedTask garbage Collected");
+                    return true;
+                });
+            };
+        }
+
         public static void ConfigureExceptionHandler(this IApplicationBuilder app, ILogger logger)
         {
             app.UseExceptionHandler(appError =>
